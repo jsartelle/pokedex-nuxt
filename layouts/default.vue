@@ -26,7 +26,7 @@
     </nav>
 
     <section class="main-content columns">
-      <aside class="column is-2 section">
+      <!-- <aside class="column is-2 section">
         <p class="menu-label is-hidden-touch">
           General
         </p>
@@ -43,7 +43,7 @@
             </NuxtLink>
           </li>
         </ul>
-      </aside>
+      </aside> -->
 
       <div class="container column is-10">
         <Nuxt />

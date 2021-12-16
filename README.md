@@ -1,5 +1,14 @@
 # pokedex-nuxt
 
+Dataset from https://www.kaggle.com/mihirbindal/the-complete-pokemon-dataset
+
+## To-do:
+- [ ] custom type colors
+- [ ] detail page with type effectiveness
+- [ ] bigger dataset with moves?
+- [ ] mobile layout
+- [ ] [dark mode](https://jenil.github.io/bulmaswatch/)
+
 ## Build Setup
 
 ```bash
