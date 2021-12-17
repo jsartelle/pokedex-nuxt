@@ -1,11 +1,13 @@
 # pokedex-nuxt
 
-Dataset from https://www.kaggle.com/mihirbindal/the-complete-pokemon-dataset
+- Dataset from https://www.kaggle.com/mihirbindal/the-complete-pokemon-dataset
+- Colors from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
 
 ## To-do:
-- [ ] custom type colors
+- [x] custom type colors
 - [ ] detail page with type effectiveness
 - [ ] bigger dataset with moves?
+- [ ] aria attributes
 - [ ] mobile layout
 - [ ] [dark mode](https://jenil.github.io/bulmaswatch/)
 

@@ -38,10 +38,10 @@ pokedex_number,name,generation,classfication,abilities,height_m,weight_kg,type1,
 27,Alolan Sandshrew,1,Mouse Pokémon,"['Snow Cloak', 'Slush Rush']",0.7,40,Ice,Steel,300,50,75,90,10,35,40,0.5,1,0.5,1,0.5,4,4,0.5,1,0.5,2,0.25,0.5,0,0.5,1,1,1,255,"5,140",70,0,0,0
 28,Sandslash,1,Mouse Pokémon,"['Sand Veil', 'Sand Rush']",1,29.5,Ground,None,450,75,100,110,45,55,65,1,1,1,0,1,1,1,1,1,2,1,2,1,0.5,1,0.5,1,2,90,"5,140",70,0,0,0
 28,Alolan Sandslash,1,Mouse Pokémon,"['Snow Cloak', 'Slush Rush']",1.2,55,Ice,Steel,450,75,100,120,25,65,65,0.5,1,0.5,1,0.5,4,4,0.5,1,0.5,2,0.25,0.5,0,0.5,1,1,1,90,"5,140",70,0,0,0
-29,Nidorana female,1,Poison Pin Pokémon,"['Poison Point', 'Rivalry', 'Hustle']",0.4,7,Poison,None,275,55,47,52,40,40,41,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,1,0.5,2,1,1,1,235,"5,140",70,0,0,0
+29,Nidoran♀,1,Poison Pin Pokémon,"['Poison Point', 'Rivalry', 'Hustle']",0.4,7,Poison,None,275,55,47,52,40,40,41,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,1,0.5,2,1,1,1,235,"5,140",70,0,0,0
 30,Nidorina,1,Poison Pin Pokémon,"['Poison Point', 'Rivalry', 'Hustle']",0.8,20,Poison,None,365,70,62,67,55,55,56,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,1,0.5,2,1,1,1,120,"5,140",70,0,0,0
 31,Nidoqueen,1,Drill Pokémon,"['Poison Point', 'Rivalry', 'Sheer Force']",1.3,60,Poison,Ground,505,90,92,87,75,85,76,0.5,1,1,0,0.5,0.5,1,1,1,1,2,2,1,0.25,2,0.5,1,2,45,"5,140",70,0,0,0
-32,Nidorana male,1,Poison Pin Pokémon,"['Poison Point', 'Rivalry', 'Hustle']",0.5,9,Poison,None,273,46,57,40,40,40,50,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,1,0.5,2,1,1,1,235,"5,140",70,0,0,0
+32,Nidoran♂,1,Poison Pin Pokémon,"['Poison Point', 'Rivalry', 'Hustle']",0.5,9,Poison,None,273,46,57,40,40,40,50,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,1,0.5,2,1,1,1,235,"5,140",70,0,0,0
 33,Nidorino,1,Poison Pin Pokémon,"['Poison Point', 'Rivalry', 'Hustle']",0.9,19.5,Poison,None,365,61,72,57,55,55,65,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,1,0.5,2,1,1,1,120,"5,140",70,0,0,0
 34,Nidoking,1,Drill Pokémon,"['Poison Point', 'Rivalry', 'Sheer Force']",1.4,62,Poison,Ground,505,81,102,77,85,75,85,0.5,1,1,0,0.5,0.5,1,1,1,1,2,2,1,0.25,2,0.5,1,2,45,"5,140",70,0,0,0
 35,Clefairy,1,Fairy Pokémon,"['Cute Charm', 'Magic Guard', 'Friend Guard']",0.6,7.5,Fairy,None,323,70,45,48,60,65,35,0.5,0.5,0,1,1,0.5,1,1,1,1,1,1,1,2,1,1,2,1,150,"2,570",140,0,0,0
@@ -456,7 +456,7 @@ pokedex_number,name,generation,classfication,abilities,height_m,weight_kg,type1,
 384,Mega Rayquaza,3,Sky High Pokémon,['Delta Stream'],10.8,392,Dragon,Flying,780,105,180,100,180,100,115,0.5,1,2,0.5,2,0.5,0.5,1,1,0.25,0,2,1,1,1,1,1,0.5,3,"30,840",0,1,0,1
 385,Jirachi,3,Wish Pokémon,['Serene Grace'],0.3,1.1,Steel,Psychic,600,100,100,100,100,100,100,1,2,0.5,1,0.5,1,2,0.5,2,0.5,2,0.5,0.5,0,0.25,0.5,0.5,1,3,"30,840",100,0,1,0
 386,Deoxys Normal Forme,3,DNA Pokémon,['Pressure'],1.7,60.8,Psychic,None,600,50,150,50,150,50,150,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,3,"30,840",0,0,1,0
-386,DeoxysAttack Forme,3,DNA Pokémon,['Pressure'],1.7,60.8,Psychic,None,600,50,180,20,180,20,150,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,3,"30,840",0,0,1,0
+386,Deoxys Attack Forme,3,DNA Pokémon,['Pressure'],1.7,60.8,Psychic,None,600,50,180,20,180,20,150,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,3,"30,840",0,0,1,0
 386,Deoxys Defense Forme,3,DNA Pokémon,['Pressure'],1.7,60.8,Psychic,None,600,50,70,160,70,160,90,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,3,"30,840",0,0,1,0
 386,Deoxys Speed Forme,3,DNA Pokémon,['Pressure'],1.7,60.8,Psychic,None,600,50,95,90,95,90,180,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,3,"30,840",0,0,1,0
 387,Turtwig,4,Tiny Leaf Pokémon,"['Overgrow', 'Shell Armor']",0.4,10.2,Grass,None,318,55,68,64,45,55,31,2,1,1,0.5,1,1,2,2,1,0.5,0.5,2,1,2,1,1,1,0.5,45,"5,140",70,0,0,0
@@ -777,8 +777,8 @@ pokedex_number,name,generation,classfication,abilities,height_m,weight_kg,type1,
 675,Pangoro,6,Daunting Pokémon,"['Iron Fist', 'Mold Breaker', 'Scrappy']",2.1,136,Fighting,Dark,495,95,124,78,69,71,58,1,0.25,1,1,4,2,1,2,0.5,1,1,1,1,1,0,0.5,1,1,65,"6,425",70,0,0,0
 676,Furfrou,6,Poodle Pokémon,['Fur Coat'],1.2,28,Normal,None,472,75,80,60,65,90,102,1,1,1,1,1,2,1,1,0,1,1,1,1,1,1,1,1,1,160,"5,140",70,0,0,0
 677,Espurr,6,Restraint Pokémon,"['Keen Eye', 'Infiltrator', 'Own Tempo']",0.3,3.5,Psychic,None,355,62,48,54,63,60,68,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,190,"5,140",70,0,0,0
-678,Meowstic Male,6,Constraint Pokémon,"['Keen Eye', 'Infiltrator', 'Prankster']",0.6,8.5,Psychic,None,466,74,48,76,83,81,104,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,75,"5,140",70,0,0,0
-678,Meowstic Female,6,Constraint Pokémon,"['Keen Eye', 'Infiltrator', 'Competitive']",0.6,8.5,Psychic,None,466,74,48,76,83,81,104,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,75,"5,140",70,0,0,0
+678,Meowstic ♂,6,Constraint Pokémon,"['Keen Eye', 'Infiltrator', 'Prankster']",0.6,8.5,Psychic,None,466,74,48,76,83,81,104,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,75,"5,140",70,0,0,0
+678,Meowstic ♀,6,Constraint Pokémon,"['Keen Eye', 'Infiltrator', 'Competitive']",0.6,8.5,Psychic,None,466,74,48,76,83,81,104,2,2,1,1,1,0.5,1,1,2,1,1,1,1,1,0.5,1,1,1,75,"5,140",70,0,0,0
 679,Honedge,6,Sword Pokémon,['No Guard'],0.8,2,Steel,Ghost,325,45,80,100,35,37,28,0.25,2,0.5,1,0.5,0,2,0.5,2,0.5,2,0.5,0,0,0.5,0.5,0.5,1,180,"5,140",70,0,0,0
 680,Doublade,6,Sword Pokémon,['No Guard'],0.8,4.5,Steel,Ghost,448,59,110,150,45,49,35,0.25,2,0.5,1,0.5,0,2,0.5,2,0.5,2,0.5,0,0,0.5,0.5,0.5,1,90,"5,140",70,0,0,0
 681,Aegislash Blade Forme,6,Royal Sword Pokémon,['Stance Change'],1.7,53,Steel,Ghost,520,60,150,50,150,50,60,0.25,2,0.5,1,0.5,0,2,0.5,2,0.5,2,0.5,0,0,0.5,0.5,0.5,1,45,"5,140",70,0,0,0
@@ -853,10 +853,10 @@ pokedex_number,name,generation,classfication,abilities,height_m,weight_kg,type1,
 742,Cutiefly,7,Bee Fly Pokémon,"['Honey Gather', 'Shield Dust', 'Sweet Veil']",0.1,0.2,Bug,Fairy,304,40,45,40,55,40,84,0.5,0.5,0,1,1,0.25,2,2,1,0.5,0.5,1,1,2,1,2,2,1,190,"5,140",70,0,0,0
 743,Ribombee,7,Bee Fly Pokémon,"['Honey Gather', 'Shield Dust', 'Sweet Veil']",0.2,0.5,Bug,Fairy,464,60,55,60,95,70,124,0.5,0.5,0,1,1,0.25,2,2,1,0.5,0.5,1,1,2,1,2,2,1,75,"5,140",70,0,0,0
 744,Rockruff,7,Puppy Pokémon,"['Keen Eye', 'Vital Spirit', 'Steadfast']",0.5,9.2,Rock,None,280,45,65,40,30,40,60,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,190,"3,855",70,0,0,0
-745, Lycanroc Midday Form,7,Wolf Pokémon,"['Keen Eye', 'Sand Rush', 'Steadfast']",0.8,25,Rock,None,487,75,115,65,55,65,112,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,90,"3,855",70,0,0,0
-745, Lycanroc Midnight Form,7,Wolf Pokémon,"['Keen Eye', 'Vital Spirit', 'No Guard']",1.1,25,Rock,None,487,85,115,75,55,75,82,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,90,"3,855",70,0,0,0
-745, Lycanroc Dusk Form,7,Wolf Pokémon,['Tough Claws'],0.8,25,Rock,None,487,75,117,65,55,65,110,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,90,"3,855",70,0,0,0
-746,WishiwashiSolo Form,7,Small Fry Pokémon,['Schooling'],0.2,0.3,Water,None,175,45,20,20,25,25,40,1,1,1,2,1,1,0.5,1,1,2,1,0.5,1,1,1,1,0.5,0.5,60,"3,855",70,0,0,0
+745,Lycanroc Midday Form,7,Wolf Pokémon,"['Keen Eye', 'Sand Rush', 'Steadfast']",0.8,25,Rock,None,487,75,115,65,55,65,112,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,90,"3,855",70,0,0,0
+745,Lycanroc Midnight Form,7,Wolf Pokémon,"['Keen Eye', 'Vital Spirit', 'No Guard']",1.1,25,Rock,None,487,85,115,75,55,75,82,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,90,"3,855",70,0,0,0
+745,Lycanroc Dusk Form,7,Wolf Pokémon,['Tough Claws'],0.8,25,Rock,None,487,75,117,65,55,65,110,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,90,"3,855",70,0,0,0
+746,Wishiwashi Solo Form,7,Small Fry Pokémon,['Schooling'],0.2,0.3,Water,None,175,45,20,20,25,25,40,1,1,1,2,1,1,0.5,1,1,2,1,0.5,1,1,1,1,0.5,0.5,60,"3,855",70,0,0,0
 746,Wishiwashi School Form,7,Small Fry Pokémon,['Schooling'],8.2,78.6,Water,None,620,45,140,130,140,135,30,1,1,1,2,1,1,0.5,1,1,2,1,0.5,1,1,1,1,0.5,0.5,60,"3,855",70,0,0,0
 747,Mareanie,7,Brutal Star Pokémon,"['Merciless', 'Limber', 'Regenerator']",0.4,8,Poison,Water,305,50,53,62,43,52,45,0.5,1,1,2,0.5,0.5,0.5,1,1,1,2,0.5,1,0.5,2,1,0.5,0.5,190,"5,140",70,0,0,0
 748,Toxapex,7,Brutal Star Pokémon,"['Merciless', 'Limber', 'Regenerator']",0.7,14.5,Poison,Water,495,50,63,152,53,142,35,0.5,1,1,2,0.5,0.5,0.5,1,1,1,2,0.5,1,0.5,2,1,0.5,0.5,75,"5,140",70,0,0,0
@@ -993,8 +993,8 @@ pokedex_number,name,generation,classfication,abilities,height_m,weight_kg,type1,
 874,Stonjourner,8,Big Rock Pokémon,['Power Spot'],2.5,520,Rock,None,470,100,125,135,20,20,70,1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,60,"6,425",50,0,0,0
 875,Eiscue Ice Face,8,Penguin Pokémon,['Ice Face'],1.4,89,Ice,None,470,75,80,110,65,90,50,1,1,1,1,1,2,2,1,1,1,1,0.5,1,1,1,2,2,1,60,"6,425",50,0,0,0
 875,Eiscue No Ice Face,8,Penguin Pokémon,['Ice Face'],1.4,89,Ice,None,470,75,80,70,65,50,130,1,1,1,1,1,2,2,1,1,1,1,0.5,1,1,1,2,2,1,60,"6,425",50,0,0,0
-876,Indeedee Male,8,Emotion Pokémon,"['Inner Focus', 'Synchronize', 'Psychic Surge']",0.9,28,Psychic,Normal,475,60,65,55,105,95,95,2,2,1,1,1,1,1,1,0,1,1,1,1,1,0.5,1,1,1,30,"10,280",140,0,0,0
-876,Indeedee Female,8,Emotion Pokémon,"['Own Tempo', 'Synchronize', 'Psychic Surge']",0.9,28,Psychic,Normal,475,70,55,65,95,105,85,2,2,1,1,1,1,1,1,0,1,1,1,1,1,0.5,1,1,1,30,"10,280",140,0,0,0
+876,Indeedee ♂,8,Emotion Pokémon,"['Inner Focus', 'Synchronize', 'Psychic Surge']",0.9,28,Psychic,Normal,475,60,65,55,105,95,95,2,2,1,1,1,1,1,1,0,1,1,1,1,1,0.5,1,1,1,30,"10,280",140,0,0,0
+876,Indeedee ♀,8,Emotion Pokémon,"['Own Tempo', 'Synchronize', 'Psychic Surge']",0.9,28,Psychic,Normal,475,70,55,65,95,105,85,2,2,1,1,1,1,1,1,0,1,1,1,1,1,0.5,1,1,1,30,"10,280",140,0,0,0
 877,Morpeko Full Belly Mode,8,Two-Sided Pokémon,['Hunger Switch'],0.3,3,Electric,Dark,436,58,95,58,70,58,97,2,0.5,1,0.5,2,2,1,0.5,0.5,1,2,1,1,1,0,1,0.5,1,180,"2,570",50,0,0,0
 877,Morpeko Hangry Mode,8,Two-Sided Pokémon,['Hunger Switch'],0.3,3,Electric,Dark,436,58,95,58,70,58,97,2,0.5,1,0.5,2,2,1,0.5,0.5,1,2,1,1,1,0,1,0.5,1,180,"2,570",50,0,0,0
 878,Cufant,8,Copperderm Pokémon,"['Sheer Force', 'Heavy Metal']",1.2,100,Steel,None,330,72,80,49,40,49,40,0.5,1,0.5,1,0.5,2,2,0.5,1,0.5,2,0.5,0.5,0,0.5,0.5,0.5,1,190,"6,425",50,0,0,0
@@ -1009,6 +1009,6 @@ pokedex_number,name,generation,classfication,abilities,height_m,weight_kg,type1,
 887,Dragapult,8,Stealth Pokémon,"['Clear Body', 'Infiltrator', 'Cursed Body']",3,50,Dragon,Ghost,600,88,120,75,100,75,142,0.5,2,2,0.5,2,0,0.5,1,2,0.5,1,2,0,0.5,1,1,1,0.5,45,"10,280",50,0,0,0
 888,Zacian Crowned Sword,8,Warrior Pokémon,['Intrepid Sword'],2.8,355,Fairy,Steel,720,92,170,115,80,115,148,0.25,0.5,0,1,0.5,1,2,0.5,1,0.5,2,0.5,0.5,0,0.5,0.5,1,1,10,"30,840",0,1,0,0
 888,Zacian Hero of Many Battles,8,Warrior Pokémon,['Intrepid Sword'],2.8,110,Fairy,None,670,92,130,115,80,115,138,0.5,0.5,0,1,1,0.5,1,1,1,1,1,1,1,2,1,1,2,1,10,"30,840",0,1,0,0
-889,ZamazentaCrowned Shield,8,Warrior Pokémon,['Dauntless Shield'],2.9,785,Fighting,Steel,720,92,130,145,80,145,128,0.25,0.5,0.5,1,1,2,2,1,1,0.5,2,0.5,0.5,0,1,0.25,0.5,1,10,"30,840",0,1,0,0
+889,Zamazenta Crowned Shield,8,Warrior Pokémon,['Dauntless Shield'],2.9,785,Fighting,Steel,720,92,130,145,80,145,128,0.25,0.5,0.5,1,1,2,2,1,1,0.5,2,0.5,0.5,0,1,0.25,0.5,1,10,"30,840",0,1,0,0
 889,Zamazenta Hero of Many Battles,8,Warrior Pokémon,['Dauntless Shield'],2.9,210,Fighting,None,670,92,130,115,80,115,138,0.5,0.5,1,1,2,1,1,2,1,1,1,1,1,1,2,0.5,1,1,10,"30,840",0,1,0,0
 890,Eternatus,8,Gigantic Pokémon,['Pressure'],20,950,Poison,Dragon,690,140,85,95,145,95,130,0.5,1,2,0.5,1,0.5,0.5,1,1,0.25,2,2,1,0.5,2,1,1,0.5,255,"30,840",0,1,0,0
