@@ -26,6 +26,7 @@
         placeholder="Filter Types"
       />
 
+      <b-checkbox v-model="showStandard">Standard</b-checkbox>
       <b-checkbox v-model="showLegendary">Legendary</b-checkbox>
       <b-checkbox v-model="showMythical">Mythical</b-checkbox>
       <b-checkbox v-model="showMegaEvolution">Mega Evolution</b-checkbox>
@@ -148,6 +149,7 @@ export default {
       searchText: "",
       typeTags: [...typeNames],
       visibleTypes: [],
+      showStandard: true,
       showLegendary: true,
       showMythical: true,
       showMegaEvolution: true,
@@ -176,6 +178,15 @@ export default {
         if (!this.showLegendary && entry.is_legendary) return false;
         if (!this.showMythical && entry.is_mythical) return false;
         if (!this.showMegaEvolution && entry.is_mega) return false;
+
+        if (
+          !this.showStandard &&
+          !entry.is_legendary &&
+          !entry.is_mythical &&
+          !entry.is_mega
+        ) {
+          return false;
+        }
 
         return true;
       });
