@@ -13,7 +13,6 @@
       />
 
       <b-taginput
-        class="mr-auto"
         v-model="visibleTypes"
         autocomplete
         :data="typeTags"
@@ -22,11 +21,16 @@
         keep-first
         :maxtags="2"
         :has-counter="false"
+        rounded
         attached
         placeholder="Filter Types"
       >
         <template v-slot="props">
           <TypeChip :type="props.option" />
+        </template>
+
+        <template #tag="{ tag }">
+          <TypeChip :type="tag" />
         </template>
       </b-taginput>
 
