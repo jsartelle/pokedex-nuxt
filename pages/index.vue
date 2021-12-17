@@ -30,10 +30,33 @@
         </template>
       </b-taginput>
 
-      <b-checkbox v-model="showStandard">Standard</b-checkbox>
-      <b-checkbox v-model="showLegendary">Legendary</b-checkbox>
-      <b-checkbox v-model="showMythical">Mythical</b-checkbox>
-      <b-checkbox v-model="showMegaEvolution">Mega Evolution</b-checkbox>
+      <b-dropdown
+        v-model="visibleGroups"
+        :triggers="['hover']"
+        multiple
+        aria-role="list"
+      >
+        <template #trigger>
+          <b-button
+            :label="`Groups (${visibleGroups.length}/4)`"
+            icon-left="pokeball"
+            icon-right="menu-down"
+          />
+        </template>
+
+        <b-dropdown-item value="standard" aria-role="listitem"
+          >Standard</b-dropdown-item
+        >
+        <b-dropdown-item value="legendary" aria-role="listitem"
+          >Legendary</b-dropdown-item
+        >
+        <b-dropdown-item value="mythical" aria-role="listitem"
+          >Mythical</b-dropdown-item
+        >
+        <b-dropdown-item value="mega" aria-role="listitem"
+          >Mega Evolution</b-dropdown-item
+        >
+      </b-dropdown>
     </b-field>
 
     <b-table
@@ -139,10 +162,7 @@ export default {
       searchText: "",
       typeTags: types,
       visibleTypes: [],
-      showStandard: true,
-      showLegendary: true,
-      showMythical: true,
-      showMegaEvolution: true,
+      visibleGroups: ["standard", "legendary", "mythical", "mega"],
     };
   },
   computed: {
@@ -164,12 +184,14 @@ export default {
           }
         }
 
-        if (!this.showLegendary && entry.is_legendary) return false;
-        if (!this.showMythical && entry.is_mythical) return false;
-        if (!this.showMegaEvolution && entry.is_mega) return false;
+        if (!this.visibleGroups.includes("legendary") && entry.is_legendary)
+          return false;
+        if (!this.visibleGroups.includes("mythical") && entry.is_mythical)
+          return false;
+        if (!this.visibleGroups.includes("mega") && entry.is_mega) return false;
 
         if (
-          !this.showStandard &&
+          !this.visibleGroups.includes("standard") &&
           !entry.is_legendary &&
           !entry.is_mythical &&
           !entry.is_mega
