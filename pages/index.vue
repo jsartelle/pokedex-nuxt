@@ -24,7 +24,11 @@
         :has-counter="false"
         attached
         placeholder="Filter Types"
-      />
+      >
+        <template v-slot="props">
+          <TypeChip :type="props.option" />
+        </template>
+      </b-taginput>
 
       <b-checkbox v-model="showStandard">Standard</b-checkbox>
       <b-checkbox v-model="showLegendary">Legendary</b-checkbox>
@@ -53,11 +57,11 @@
       </b-table-column>
 
       <b-table-column field="type1" label="Type 1" v-slot="props">
-        {{ props.row.type1 }}
+        <TypeChip :type="props.row.type1" />
       </b-table-column>
 
       <b-table-column field="type2" label="Type 2" v-slot="props">
-        {{ props.row.type2 }}
+        <TypeChip :type="props.row.type2" />
       </b-table-column>
 
       <b-table-column field="hp" label="HP" numeric sortable v-slot="props">
@@ -128,7 +132,7 @@ import types from "~/assets/types.json";
 export default {
   name: "PokedexPage",
   components: {
-    TypeChip
+    TypeChip,
   },
   data() {
     return {
