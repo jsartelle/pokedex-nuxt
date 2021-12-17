@@ -2,6 +2,11 @@
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
+$primary: #C4E673;
+$primary-invert: findColorInvert($primary);
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+
 $type-Normal: #a8a878;
 $type-Fighting: #c03028;
 $type-Flying: #a890f0;
@@ -48,6 +53,12 @@ $custom-shades: null !default;
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: mergeColorMaps(
   (
+    "primary": (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark
+    ),
     "type-Normal": (
       $type-Normal,
       $type-Normal-invert,
