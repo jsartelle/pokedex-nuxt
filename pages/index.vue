@@ -141,6 +141,7 @@ const typeNames = [
   "Dark",
   "Fairy",
 ];
+import pokemon from "~/assets/Pokemon_data.csv";
 
 export default {
   name: "PokedexPage",
@@ -156,9 +157,8 @@ export default {
     };
   },
   computed: {
-    ...mapState(["pokemon"]),
     visiblePokemon() {
-      return this.pokemon.filter((entry) => {
+      return pokemon.filter((entry) => {
         if (this.searchText) {
           if (
             !entry.name.toLowerCase().includes(this.searchText.toLowerCase())
