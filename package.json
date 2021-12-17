@@ -20,6 +20,8 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "csv-loader": "^3.0.3"
+    "csv-loader": "^3.0.3",
+    "sass": "^1.45.0",
+    "sass-loader": "^10.2.0"
   }
 }

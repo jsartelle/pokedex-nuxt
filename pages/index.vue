@@ -118,37 +118,22 @@
 </template>
 
 <script>
+import TypeChip from "~/components/TypeChip.vue";
+
 import { mapState } from "vuex";
 
-const typeNames = [
-  "None",
-  "Normal",
-  "Fighting",
-  "Flying",
-  "Poison",
-  "Ground",
-  "Rock",
-  "Bug",
-  "Ghost",
-  "Steel",
-  "Fire",
-  "Water",
-  "Grass",
-  "Electric",
-  "Psychic",
-  "Ice",
-  "Dragon",
-  "Dark",
-  "Fairy",
-];
 import pokemon from "~/assets/Pokemon_data.csv";
+import types from "~/assets/types.json";
 
 export default {
   name: "PokedexPage",
+  components: {
+    TypeChip
+  },
   data() {
     return {
       searchText: "",
-      typeTags: [...typeNames],
+      typeTags: types,
       visibleTypes: [],
       showStandard: true,
       showLegendary: true,
@@ -194,7 +179,7 @@ export default {
   },
   methods: {
     filterTypeTags(text) {
-      this.typeTags = typeNames.filter((name) =>
+      this.typeTags = types.filter((name) =>
         name.toLowerCase().includes(text.toLowerCase())
       );
     },

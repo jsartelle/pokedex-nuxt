@@ -1,0 +1,129 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$type-Normal: #a8a878;
+$type-Fighting: #c03028;
+$type-Flying: #a890f0;
+$type-Poison: #a040a0;
+$type-Ground: #e0c068;
+$type-Rock: #b8a038;
+$type-Bug: #a8b820;
+$type-Ghost: #705898;
+$type-Steel: #b8b8d0;
+$type-Fire: #f08030;
+$type-Water: #6890f0;
+$type-Grass: #78c850;
+$type-Electric: #f8d030;
+$type-Psychic: #f85888;
+$type-Ice: #98d8d8;
+$type-Dragon: #7038f8;
+$type-Dark: #705848;
+$type-Fairy: #ee99ac;
+
+// TODO do this better later
+$type-Normal-invert: findColorInvert(#a8a878);
+$type-Fighting-invert: findColorInvert(#c03028);
+$type-Flying-invert: findColorInvert(#a890f0);
+$type-Poison-invert: findColorInvert(#a040a0);
+$type-Ground-invert: findColorInvert(#e0c068);
+$type-Rock-invert: findColorInvert(#b8a038);
+$type-Bug-invert: findColorInvert(#a8b820);
+$type-Ghost-invert: findColorInvert(#705898);
+$type-Steel-invert: findColorInvert(#b8b8d0);
+$type-Fire-invert: findColorInvert(#f08030);
+$type-Water-invert: findColorInvert(#6890f0);
+$type-Grass-invert: findColorInvert(#78c850);
+$type-Electric-invert: findColorInvert(#f8d030);
+$type-Psychic-invert: findColorInvert(#f85888);
+$type-Ice-invert: findColorInvert(#98d8d8);
+$type-Dragon-invert: findColorInvert(#7038f8);
+$type-Dark-invert: findColorInvert(#705848);
+$type-Fairy-invert: findColorInvert(#ee99ac);
+
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps(
+  (
+    "type-Normal": (
+      $type-Normal,
+      $type-Normal-invert,
+    ),
+    "type-Fighting": (
+      $type-Fighting,
+      $type-Fighting-invert,
+    ),
+    "type-Flying": (
+      $type-Flying,
+      $type-Flying-invert,
+    ),
+    "type-Poison": (
+      $type-Poison,
+      $type-Poison-invert,
+    ),
+    "type-Ground": (
+      $type-Ground,
+      $type-Ground-invert,
+    ),
+    "type-Rock": (
+      $type-Rock,
+      $type-Rock-invert,
+    ),
+    "type-Bug": (
+      $type-Bug,
+      $type-Bug-invert,
+    ),
+    "type-Ghost": (
+      $type-Ghost,
+      $type-Ghost-invert,
+    ),
+    "type-Steel": (
+      $type-Steel,
+      $type-Steel-invert,
+    ),
+    "type-Fire": (
+      $type-Fire,
+      $type-Fire-invert,
+    ),
+    "type-Water": (
+      $type-Water,
+      $type-Water-invert,
+    ),
+    "type-Grass": (
+      $type-Grass,
+      $type-Grass-invert,
+    ),
+    "type-Electric": (
+      $type-Electric,
+      $type-Electric-invert,
+    ),
+    "type-Psychic": (
+      $type-Psychic,
+      $type-Psychic-invert,
+    ),
+    "type-Ice": (
+      $type-Ice,
+      $type-Ice-invert,
+    ),
+    "type-Dragon": (
+      $type-Dragon,
+      $type-Dragon-invert,
+    ),
+    "type-Dark": (
+      $type-Dark,
+      $type-Dark-invert,
+    ),
+    "type-Fairy": (
+      $type-Fairy,
+      $type-Fairy-invert,
+    ),
+  ),
+  $custom-colors
+);
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
