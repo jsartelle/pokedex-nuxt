@@ -1,5 +1,5 @@
-<template>
-  <b-tag rounded :type="`is-type-${type}`">{{ type }}</b-tag>
+<template functional>
+  <b-tag rounded :type="`is-type-${props.type}`">{{ props.type }}</b-tag>
 </template>
 
 <script>
