@@ -13,7 +13,7 @@
       />
 
       <b-taginput
-        v-model="visibleTypes"
+        v-model="filteredTypes"
         autocomplete
         :data="typeTags"
         @typing="filterTypeTags"
@@ -35,14 +35,14 @@
       </b-taginput>
 
       <b-dropdown
-        v-model="visibleGroups"
+        v-model="filteredGroups"
         :triggers="['hover']"
         multiple
         aria-role="list"
       >
         <template #trigger>
           <b-button
-            :label="`Groups (${visibleGroups.length}/4)`"
+            :label="`Groups (${filteredGroups.length}/4)`"
             icon-left="pokeball"
             icon-right="menu-down"
           />
@@ -61,6 +61,8 @@
           >Mega Evolution</b-dropdown-item
         >
       </b-dropdown>
+
+      <b-button class="ml-auto" @click="resetFilters">Reset Filters</b-button>
     </b-field>
 
     <b-table
@@ -156,6 +158,12 @@ import { mapState } from "vuex";
 import pokemon from "~/assets/Pokemon_data.csv";
 import types from "~/assets/types.json";
 
+const defaultFilterProps = {
+  searchText: "",
+  filteredTypes: [],
+  filteredGroups: ["standard", "legendary", "mythical", "mega"],
+};
+
 export default {
   name: "PokedexPage",
   components: {
@@ -163,10 +171,8 @@ export default {
   },
   data() {
     return {
-      searchText: "",
       typeTags: types,
-      visibleTypes: [],
-      visibleGroups: ["standard", "legendary", "mythical", "mega"],
+      ...defaultFilterProps,
     };
   },
   computed: {
@@ -180,22 +186,23 @@ export default {
           }
         }
 
-        if (this.visibleTypes.length) {
-          for (const type of this.visibleTypes) {
+        if (this.filteredTypes.length) {
+          for (const type of this.filteredTypes) {
             if (![entry.type1, entry.type2].includes(type)) {
               return false;
             }
           }
         }
 
-        if (!this.visibleGroups.includes("legendary") && entry.is_legendary)
+        if (!this.filteredGroups.includes("legendary") && entry.is_legendary)
           return false;
-        if (!this.visibleGroups.includes("mythical") && entry.is_mythical)
+        if (!this.filteredGroups.includes("mythical") && entry.is_mythical)
           return false;
-        if (!this.visibleGroups.includes("mega") && entry.is_mega) return false;
+        if (!this.filteredGroups.includes("mega") && entry.is_mega)
+          return false;
 
         if (
-          !this.visibleGroups.includes("standard") &&
+          !this.filteredGroups.includes("standard") &&
           !entry.is_legendary &&
           !entry.is_mythical &&
           !entry.is_mega
@@ -212,6 +219,11 @@ export default {
       this.typeTags = types.filter((name) =>
         name.toLowerCase().includes(text.toLowerCase())
       );
+    },
+    resetFilters() {
+      for (const key in defaultFilterProps) {
+        this[key] = defaultFilterProps[key];
+      }
     },
   },
 };
