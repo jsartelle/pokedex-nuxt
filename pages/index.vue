@@ -150,28 +150,28 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
+
 import TypeChip from "~/components/TypeChip.vue";
 
-import { mapState } from "vuex";
-
 import pokemon from "~/assets/Pokemon_data.csv";
-import types from "~/assets/types.json";
+import pokemonTypes, { PokemonType } from "~/assets/pokemon-types.json";
 
 const defaultFilterProps = {
   searchText: "",
-  filteredTypes: [],
+  filteredTypes: [] as PokemonType[],
   filteredGroups: ["standard", "legendary", "mythical", "mega"],
 };
 
-export default {
+export default Vue.extend({
   name: "PokedexPage",
   components: {
     TypeChip,
   },
   data() {
     return {
-      typeTags: types,
+      typeTags: pokemonTypes as PokemonType[],
       ...defaultFilterProps,
     };
   },
@@ -215,16 +215,14 @@ export default {
     },
   },
   methods: {
-    filterTypeTags(text) {
-      this.typeTags = types.filter((name) =>
+    filterTypeTags(text: string) {
+      this.typeTags = pokemonTypes.filter((name) =>
         name.toLowerCase().includes(text.toLowerCase())
       );
     },
     resetFilters() {
-      for (const key in defaultFilterProps) {
-        this[key] = defaultFilterProps[key];
-      }
+        Object.assign(this, defaultFilterProps);
     },
   },
-};
+});
 </script>

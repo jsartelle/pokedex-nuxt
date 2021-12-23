@@ -5,11 +5,12 @@
 
 ## To-do:
 - [x] custom type colors
-- [ ] detail page with type effectiveness
+- [ ] detail page with type effectiveness, stats, abilities
 - [ ] bigger dataset with moves?
 - [ ] aria attributes
 - [ ] mobile layout
 - [ ] [dark mode](https://jenil.github.io/bulmaswatch/)
+- [ ] PWA
 
 ## Build Setup
 

@@ -2,18 +2,18 @@
   <b-tag rounded :type="`is-type-${props.type}`">{{ props.type }}</b-tag>
 </template>
 
-<script>
-import types from "~/assets/types.json";
+<script lang="ts">
+import Vue, { PropType } from "vue";
 
-export default {
+import { PokemonType } from "~/assets/pokemon-types.json";
+
+export default Vue.extend({
   name: "TypeChip",
   props: {
     type: {
       required: true,
-      validator(value) {
-        return types.includes(value);
-      },
+      type: String as PropType<PokemonType>,
     },
   },
-};
+});
 </script>
